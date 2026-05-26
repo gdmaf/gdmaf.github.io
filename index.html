@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GDMAF — Grupo de Desenvolvimento de Materiais Funcionais · UNIFEI</title>
+  <title>GDMaF — Grupo de Desenvolvimento de Materiais Funcionais · UNIFEI</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -106,27 +106,48 @@
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
     <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
-      <a href="#hero" class="flex items-center gap-3 group" aria-label="GDMAF Home">
-        <img src="images/logo-gdmaf-nobg.png" alt="GDMAF" class="h-8 w-auto object-contain" />
-        <img src="images/logo-unifei.png" alt="UNIFEI" class="h-7 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity hidden sm:block" />
-      </a>
+      <div class="flex items-center gap-3">
+        <a href="#hero" aria-label="GDMaF Home">
+          <img src="images/logo-gdmaf-nobg.png" alt="GDMaF" class="h-8 w-auto object-contain" />
+        </a>
+        <a href="https://www.unifei.edu.br" target="_blank" rel="noopener noreferrer" aria-label="Site da UNIFEI" class="hidden sm:block">
+          <img src="images/logo-unifei.png" alt="UNIFEI" class="h-7 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
+        </a>
+      </div>
 
       <nav class="hidden md:flex items-center gap-7 text-[13px] font-medium text-muted" aria-label="Menu principal">
         <a href="#missao"      class="nav-link">Missão</a>
         <a href="#software"    class="nav-link">Software</a>
         <a href="#publicacoes" class="nav-link">Publicações</a>
         <a href="#equipe"      class="nav-link">Equipe</a>
-        <a href="#servicos"    class="nav-link">Serviços</a>
+        <a href="#servicos"    class="nav-link">Serviços de caracterização</a>
         <a href="#contato"     class="nav-link">Contato</a>
       </nav>
 
-      <a href="#contato"
-         class="hidden md:inline-flex items-center gap-1.5 bg-accent text-white text-[13px]
-                font-semibold px-4 py-2 rounded-lg hover:bg-accent-hv transition-colors">
-        Entre em contato
-        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"
-             aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-      </a>
+      <div class="hidden md:flex items-center gap-1">
+        <a href="https://www.instagram.com/gdmaf_unifei" target="_blank" rel="noopener noreferrer"
+           aria-label="Instagram do GDMaF"
+           class="w-8 h-8 text-muted hover:text-accent transition-colors flex items-center justify-center rounded-lg">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+           aria-label="LinkedIn do GDMaF"
+           class="w-8 h-8 text-muted hover:text-accent transition-colors flex items-center justify-center rounded-lg">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+           aria-label="Facebook do GDMaF"
+           class="w-8 h-8 text-muted hover:text-accent transition-colors flex items-center justify-center rounded-lg">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="#contato"
+           class="inline-flex items-center gap-1.5 bg-accent text-white text-[13px]
+                  font-semibold px-4 py-2 rounded-lg hover:bg-accent-hv transition-colors ml-2">
+          Entre em contato
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"
+               aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </a>
+      </div>
     </div>
   </header>
 
@@ -147,18 +168,20 @@
         <div>
           <!-- Logos institucionais -->
           <div class="flex items-center gap-6 mb-12">
-            <img src="images/logo-gdmaf-nobg.png" alt="GDMAF" class="h-16 w-auto object-contain" />
+            <img src="images/logo-gdmaf-nobg.png" alt="GDMaF" class="h-16 w-auto object-contain" />
             <div class="w-px h-12 bg-border"></div>
-            <img src="images/logo-unifei.png" alt="UNIFEI" class="h-12 w-auto object-contain opacity-70" />
+            <a href="https://www.unifei.edu.br" target="_blank" rel="noopener noreferrer">
+              <img src="images/logo-unifei.png" alt="UNIFEI" class="h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
+            </a>
           </div>
 
           <!-- Tag line -->
-          <div class="section-tag mb-8">Universidade Federal de Itajubá · IEM</div>
+          <div class="section-tag mb-8">Universidade Federal de Itajubá</div>
 
           <!-- Headline -->
           <h1 class="font-serif text-5xl lg:text-7xl font-bold leading-[0.95] tracking-tight text-ink mb-8">
             Grupo de<br />
-            <em class="not-italic text-accent">Desenvolvimento</em><br />
+            Desenvolvimento<br />
             de Materiais<br />
             Funcionais.
           </h1>
@@ -205,7 +228,7 @@
         <div class="relative hidden lg:block">
           <div class="relative overflow-hidden rounded-2xl border border-border bg-surface aspect-[4/5] group">
             <img src="https://picsum.photos/seed/group1/800/1000"
-                 alt="Foto do grupo GDMAF"
+                 alt="Foto do grupo GDMaF"
                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                  loading="eager" />
             <div class="absolute inset-0 bg-gradient-to-t from-ink/30 to-transparent"></div>
@@ -303,7 +326,7 @@
           </h2>
           <p class="text-muted leading-relaxed mb-6 text-[15px]">
             Ferramenta de código aberto para caracterização automatizada de tamanho de grão em
-            imagens de Microscopia Eletrônica de Varredura (MEV). Combina rede neural convolucional
+            imagens de microscopia eletrônica de varredura (MEV). Combina rede neural convolucional
             <strong class="text-ink font-medium">U-Net</strong> com o modelo
             <strong class="text-ink font-medium">Segment Anything (SAM)</strong> para segmentação
             precisa sem requisitos computacionais avançados.
@@ -348,7 +371,7 @@
             <a href="https://github.com/gdmaf/GDCount/releases" target="_blank" rel="noopener noreferrer"
                class="inline-flex items-center gap-2 border border-border text-ink text-sm font-semibold
                       px-5 py-2.5 rounded-lg hover:border-accent hover:text-accent transition-colors">
-              Download (.exe)
+              Download
             </a>
           </div>
         </div>
@@ -396,7 +419,7 @@
       <div class="flex items-end justify-between flex-wrap gap-4 mb-14">
         <div>
           <div class="section-tag mb-4">Produção científica</div>
-          <h2 class="font-serif text-5xl font-bold text-ink tracking-tight">Publicações</h2>
+          <h2 class="font-serif text-5xl font-bold text-ink tracking-tight">Publicações em periódicos</h2>
         </div>
         <span class="bg-accent text-white text-xs font-bold px-3.5 py-1.5 rounded-full tracking-wide">
           56 artigos internacionais
@@ -671,6 +694,10 @@
             <div>
               <a href="membros/daniel-thomazini.html" class="font-semibold text-ink hover:text-accent transition-colors">Prof. Dr. Daniel Thomazini</a>
               <p class="text-accent text-xs font-medium mt-0.5">Coordenador</p>
+              <a href="mailto:thomazini@unifei.edu.br"
+                 class="text-muted text-xs mt-1 block hover:text-accent transition-colors">
+                thomazini@unifei.edu.br
+              </a>
             </div>
           </div>
         </div>
@@ -684,7 +711,7 @@
             <div class="avatar w-11 h-11 bg-accent-lt text-accent rounded-lg flex items-center
                         justify-center font-bold text-sm flex-shrink-0" aria-hidden="true">JP</div>
             <div>
-              <a href="membros/joao-paulo-rosa.html" class="font-medium text-ink text-sm hover:text-accent transition-colors">João Paulo M. M. Rosa</a>
+              <a href="membros/joao-paulo-rosa.html" class="font-medium text-ink text-sm hover:text-accent transition-colors">João Paulo M. Mansano Rosa</a>
               <p class="text-muted text-xs mt-0.5">M.Sc. · Doutorando</p>
             </div>
           </div>
@@ -768,7 +795,7 @@
             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM10.5 7.5v6m3-3h-6"/></svg>
           </div>
           <h3 class="font-semibold text-ink text-sm mb-1.5">MEV</h3>
-          <p class="text-muted text-xs leading-relaxed">Microscopia Eletrônica de Varredura até 120.000×</p>
+          <p class="text-muted text-xs leading-relaxed">microscopia eletrônica de varredura até 120.000×</p>
         </a>
 
         <a href="equipamentos/eds.html" class="svc-card card bg-white rounded-xl p-7 border border-border block">
@@ -829,38 +856,51 @@
 
       </div>
 
-      <!-- Equipment gallery -->
+      <!-- Equipment gallery carousel -->
       <div class="mt-16">
         <p class="text-xs font-semibold text-muted uppercase tracking-widest mb-6">Infraestrutura do laboratório</p>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <div class="relative overflow-hidden rounded-xl bg-border aspect-[4/3] group">
-            <img src="https://picsum.photos/seed/sem1/600/450" alt="Microscópio Eletrônico de Varredura"
-                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
-            <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/40 transition-colors duration-300 flex items-end p-3">
-              <span class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">MEV</span>
+        <div class="gallery-wrapper relative">
+          <div class="overflow-hidden rounded-xl">
+            <div class="gallery-track flex transition-transform duration-300 ease-in-out">
+              <!-- Página 1 — substituir imagens quando disponíveis; para adicionar mais fotos, copiar este bloco -->
+              <div class="gallery-page min-w-full grid grid-cols-2 md:grid-cols-4 gap-3">
+                <div class="relative overflow-hidden rounded-xl bg-border aspect-[4/3] group">
+                  <img src="https://picsum.photos/seed/sem1/600/450" alt="Microscópio Eletrônico de Varredura"
+                       class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+                  <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/40 transition-colors duration-300 flex items-end p-3">
+                    <span class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">MEV</span>
+                  </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl bg-border aspect-[4/3] group">
+                  <img src="https://picsum.photos/seed/lab2/600/450" alt="Laboratório de caracterização"
+                       class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+                  <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/40 transition-colors duration-300 flex items-end p-3">
+                    <span class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">Laboratório</span>
+                  </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl bg-border aspect-[4/3] group">
+                  <img src="https://picsum.photos/seed/furnace3/600/450" alt="Forno de sinterização"
+                       class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+                  <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/40 transition-colors duration-300 flex items-end p-3">
+                    <span class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">Sinterização</span>
+                  </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl bg-border aspect-[4/3] group">
+                  <img src="https://picsum.photos/seed/equip4/600/450" alt="Equipamento de medição"
+                       class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+                  <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/40 transition-colors duration-300 flex items-end p-3">
+                    <span class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">Medição</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="relative overflow-hidden rounded-xl bg-border aspect-[4/3] group">
-            <img src="https://picsum.photos/seed/lab2/600/450" alt="Laboratório de caracterização"
-                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
-            <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/40 transition-colors duration-300 flex items-end p-3">
-              <span class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">Laboratório</span>
-            </div>
-          </div>
-          <div class="relative overflow-hidden rounded-xl bg-border aspect-[4/3] group">
-            <img src="https://picsum.photos/seed/furnace3/600/450" alt="Forno de sinterização"
-                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
-            <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/40 transition-colors duration-300 flex items-end p-3">
-              <span class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">Sinterização</span>
-            </div>
-          </div>
-          <div class="relative overflow-hidden rounded-xl bg-border aspect-[4/3] group">
-            <img src="https://picsum.photos/seed/equip4/600/450" alt="Equipamento de medição"
-                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
-            <div class="absolute inset-0 bg-ink/0 group-hover:bg-ink/40 transition-colors duration-300 flex items-end p-3">
-              <span class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">Medição</span>
-            </div>
-          </div>
+          <button class="gallery-prev absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 border border-border shadow text-ink flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-colors z-10" aria-label="Fotos anteriores">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/></svg>
+          </button>
+          <button class="gallery-next absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 border border-border shadow text-ink flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-colors z-10" aria-label="Próximas fotos">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+          </button>
         </div>
         <p class="text-center text-xs text-muted mt-3 italic">Fotos dos equipamentos serão adicionadas em breve.</p>
       </div>
@@ -882,7 +922,7 @@
         <!-- Left: info -->
         <div>
           <div class="section-tag mb-6">Localização &amp; Contato</div>
-          <h2 class="font-serif text-5xl font-bold text-ink mb-10 tracking-tight">Fale com o grupo.</h2>
+          <h2 class="font-serif text-5xl font-bold text-ink mb-10 tracking-tight">Fale com o grupo</h2>
 
           <div class="space-y-7">
             <div class="flex items-start gap-4">
@@ -895,7 +935,6 @@
               <div>
                 <p class="font-semibold text-ink text-sm">Endereço</p>
                 <p class="text-muted text-sm mt-1 leading-relaxed">
-                  Instituto de Engenharia Mecânica (IEM)<br />
                   Universidade Federal de Itajubá — UNIFEI<br />
                   Av. BPS, 1303 · Pinheirinho<br />
                   CEP 37.500-903 · Itajubá/MG
@@ -926,7 +965,7 @@
               </div>
               <div>
                 <p class="font-semibold text-ink text-sm">Telefone</p>
-                <p class="text-muted text-sm mt-1">(35) 3629-1051 · (35) 3629-1027</p>
+                <p class="text-muted text-sm mt-1">(35) 3629-1051 · (35) 3629-1027 · (35) 3629-1303</p>
               </div>
             </div>
           </div>
@@ -934,19 +973,19 @@
           <!-- Social icons -->
           <div class="mt-8 flex gap-3">
             <a href="https://www.instagram.com/gdmaf_unifei" target="_blank" rel="noopener noreferrer"
-               aria-label="Instagram do GDMAF"
+               aria-label="Instagram do GDMaF"
                class="w-9 h-9 bg-surface border border-border hover:bg-accent hover:text-white hover:border-accent
                       text-muted rounded-lg flex items-center justify-center transition-colors">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
             </a>
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-               aria-label="LinkedIn do GDMAF"
+               aria-label="LinkedIn do GDMaF"
                class="w-9 h-9 bg-surface border border-border hover:bg-accent hover:text-white hover:border-accent
                       text-muted rounded-lg flex items-center justify-center transition-colors">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             </a>
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
-               aria-label="Facebook do GDMAF"
+               aria-label="Facebook do GDMaF"
                class="w-9 h-9 bg-surface border border-border hover:bg-accent hover:text-white hover:border-accent
                       text-muted rounded-lg flex items-center justify-center transition-colors">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
@@ -1013,7 +1052,7 @@
   <footer class="bg-ink text-slate-400 py-12">
     <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
       <div class="flex items-center gap-4">
-        <img src="images/logo-gdmaf-white.png" alt="GDMAF" class="h-9 w-auto object-contain" />
+        <img src="images/logo-gdmaf-white.png" alt="GDMaF" class="h-9 w-auto object-contain" />
         <p class="text-xs leading-relaxed">Grupo de Desenvolvimento de<br />Materiais Funcionais · UNIFEI</p>
       </div>
       <nav class="flex flex-wrap gap-5 text-xs justify-center" aria-label="Rodapé">
@@ -1024,7 +1063,7 @@
         <a href="#servicos"    class="hover:text-white transition-colors">Serviços</a>
         <a href="#contato"     class="hover:text-white transition-colors">Contato</a>
       </nav>
-      <p class="text-xs">© 2025 GDMAF · UNIFEI · Itajubá, MG</p>
+      <p class="text-xs">© 2025 GDMaF · UNIFEI · Itajubá, MG</p>
     </div>
   </footer>
 
@@ -1035,6 +1074,27 @@
       const open = el.classList.toggle('open');
       btn.textContent = open ? '← Mostrar menos' : 'Ver todas →';
     }
+
+    (function () {
+      var wrapper = document.querySelector('.gallery-wrapper');
+      if (!wrapper) return;
+      var track   = wrapper.querySelector('.gallery-track');
+      var pages   = Array.from(wrapper.querySelectorAll('.gallery-page'));
+      var prevBtn = wrapper.querySelector('.gallery-prev');
+      var nextBtn = wrapper.querySelector('.gallery-next');
+      var current = 0;
+      if (pages.length <= 1) {
+        if (prevBtn) prevBtn.hidden = true;
+        if (nextBtn) nextBtn.hidden = true;
+        return;
+      }
+      function go(n) {
+        current = ((n % pages.length) + pages.length) % pages.length;
+        track.style.transform = 'translateX(-' + (current * 100) + '%)';
+      }
+      if (prevBtn) prevBtn.addEventListener('click', function () { go(current - 1); });
+      if (nextBtn) nextBtn.addEventListener('click', function () { go(current + 1); });
+    })();
   </script>
 
 </body>
