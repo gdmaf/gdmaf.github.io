@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coeficiente Seebeck — GDMAF · UNIFEI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#1D4ED8', 'accent-hv': '#1e40af', 'accent-lt': '#EFF6FF',
+            surface: '#F8FAFC', border: '#E2E8F0', muted: '#64748B', ink: '#020617',
+          },
+          fontFamily: {
+            serif: ['"EB Garamond"', 'Georgia', 'serif'],
+            sans:  ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    .nav-link { position: relative; transition: color 0.2s; }
+    .nav-link::after { content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 1.5px; background: #1D4ED8; transition: width 0.22s ease; }
+    .nav-link:hover::after { width: 100%; }
+    .nav-link:hover { color: #1D4ED8; }
+    .section-tag { display: inline-flex; align-items: center; gap: 8px; font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1D4ED8; }
+    .section-tag::before { content: ''; display: block; width: 24px; height: 1.5px; background: #1D4ED8; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #1D4ED8; outline-offset: 2px; }
+    a, button { cursor: pointer; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+  </style>
+</head>
+<body class="bg-white text-ink font-sans antialiased">
+
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3 group" aria-label="GDMAF Home">
+        <img src="../images/logo-gdmaf-nobg.png" alt="GDMAF" class="h-8 w-auto object-contain" />
+        <img src="../images/logo-unifei.png" alt="UNIFEI" class="h-7 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity hidden sm:block" />
+      </a>
+      <nav class="hidden md:flex items-center gap-7 text-[13px] font-medium text-muted">
+        <a href="../index.html#missao"      class="nav-link">Missão</a>
+        <a href="../index.html#software"    class="nav-link">Software</a>
+        <a href="../index.html#publicacoes" class="nav-link">Publicações</a>
+        <a href="../index.html#equipe"      class="nav-link">Equipe</a>
+        <a href="../index.html#servicos"    class="nav-link">Serviços</a>
+        <a href="../index.html#contato"     class="nav-link">Contato</a>
+      </nav>
+      <a href="../index.html#contato"
+         class="hidden md:inline-flex items-center gap-1.5 bg-accent text-white text-[13px] font-semibold px-4 py-2 rounded-lg hover:bg-accent-hv transition-colors">
+        Entre em contato
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <a href="../index.html#servicos"
+         class="inline-flex items-center gap-2 text-muted text-sm hover:text-accent transition-colors mb-12">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"/></svg>
+        Voltar para serviços
+      </a>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+        <div>
+          <div class="carousel-wrapper relative overflow-hidden rounded-2xl border border-border aspect-[4/3]">
+            <div class="carousel-track flex h-full transition-transform duration-300 ease-in-out">
+              <div class="carousel-slide min-w-full h-full flex items-center justify-center bg-accent-lt">
+                <!-- TODO: substituir por <img src="../images/equipamentos/seebeck-1.jpg" alt="Seebeck — foto 1" class="w-full h-full object-cover" /> -->
+                <span class="font-serif text-7xl font-bold text-accent select-none" aria-hidden="true">ZEM</span>
+              </div>
+              <!-- TODO: adicionar mais slides aqui -->
+            </div>
+            <button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/40 text-white flex items-center justify-center hover:bg-black/60 transition-colors" aria-label="Imagem anterior">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/></svg>
+            </button>
+            <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/40 text-white flex items-center justify-center hover:bg-black/60 transition-colors" aria-label="Próxima imagem">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+            </button>
+            <div class="carousel-dots absolute bottom-3 left-0 right-0 flex justify-center gap-2"></div>
+          </div>
+          <p class="text-xs text-muted/60 mt-2 text-center italic">Fotos do equipamento serão adicionadas em breve.</p>
+        </div>
+
+        <div class="bg-surface rounded-2xl border border-border p-8 lg:p-10">
+          <div class="section-tag mb-5">Propriedades Termoelétricas</div>
+          <h1 class="font-serif text-4xl lg:text-5xl font-bold text-ink leading-tight mb-2">
+            Coeficiente Seebeck
+          </h1>
+          <p class="text-accent text-sm font-semibold mb-6">ZEM · Medição simultânea S e ρ</p>
+
+          <p class="text-muted text-[15px] leading-relaxed mb-8">
+            <!-- TODO: inserir descrição técnica do equipamento -->
+            Descrição técnica será adicionada em breve.
+          </p>
+
+          <dl class="mb-8 text-sm">
+            <div class="flex justify-between gap-4 py-3 border-b border-border">
+              <dt class="text-muted">Faixa de temperatura</dt>
+              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+            </div>
+            <div class="flex justify-between gap-4 py-3 border-b border-border">
+              <dt class="text-muted">Faixa de medição (S)</dt>
+              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+            </div>
+            <div class="flex justify-between gap-4 py-3 border-b border-border">
+              <dt class="text-muted">Atmosfera</dt>
+              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+            </div>
+            <div class="flex justify-between gap-4 py-3 border-b border-border">
+              <dt class="text-muted">Tamanho da amostra</dt>
+              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+            </div>
+            <div class="flex justify-between gap-4 py-3">
+              <dt class="text-muted">Fabricante / Modelo</dt>
+              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+            </div>
+          </dl>
+
+          <a href="../index.html#contato"
+             class="inline-flex items-center gap-2 bg-accent text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-accent-hv transition-colors">
+            Solicitar análise
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      var track = document.querySelector('.carousel-track');
+      var slides = Array.from(document.querySelectorAll('.carousel-slide'));
+      var dots = document.querySelector('.carousel-dots');
+      var prevBtn = document.querySelector('.carousel-prev');
+      var nextBtn = document.querySelector('.carousel-next');
+      var current = 0;
+      if (!track || slides.length === 0) return;
+      slides.forEach(function (_, i) {
+        var d = document.createElement('button');
+        d.setAttribute('aria-label', 'Imagem ' + (i + 1));
+        d.className = 'w-2 h-2 rounded-full transition-colors duration-200 ' + (i === 0 ? 'bg-white' : 'bg-white/40');
+        d.addEventListener('click', function () { go(i); });
+        dots.appendChild(d);
+      });
+      if (slides.length <= 1) {
+        if (prevBtn) prevBtn.hidden = true;
+        if (nextBtn) nextBtn.hidden = true;
+        if (dots)    dots.hidden    = true;
+      }
+      function go(n) {
+        current = ((n % slides.length) + slides.length) % slides.length;
+        track.style.transform = 'translateX(-' + (current * 100) + '%)';
+        Array.from(dots.children).forEach(function (d, i) {
+          d.className = 'w-2 h-2 rounded-full transition-colors duration-200 ' + (i === current ? 'bg-white' : 'bg-white/40');
+        });
+      }
+      if (prevBtn) prevBtn.addEventListener('click', function () { go(current - 1); });
+      if (nextBtn) nextBtn.addEventListener('click', function () { go(current + 1); });
+    })();
+  </script>
+
+</body>
+</html>
