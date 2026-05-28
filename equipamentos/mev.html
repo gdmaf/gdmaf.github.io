@@ -41,7 +41,7 @@
     <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="../index.html" class="flex items-center gap-3 group" aria-label="GDMaF Home">
         <img src="../images/logo-gdmaf-nobg.png" alt="GDMaF" class="h-8 w-auto object-contain" />
-        <img src="../images/logo-unifei.png" alt="UNIFEI" class="h-7 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity hidden sm:block" />
+        <img src="../images/logo-unifei.png" alt="UNIFEI" class="h-8 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity hidden sm:block" />
       </a>
       <nav class="hidden md:flex items-center gap-7 text-[13px] font-medium text-muted">
         <a href="../index.html#missao"      class="nav-link">Missão</a>
@@ -75,19 +75,15 @@
           <div class="carousel-wrapper relative overflow-hidden rounded-2xl border border-border aspect-[4/3]">
             <div class="carousel-track flex h-full transition-transform duration-300 ease-in-out">
 
-              <!-- Slide 1: placeholder — substituir por <img> quando tiver fotos -->
-              <div class="carousel-slide min-w-full h-full flex items-center justify-center bg-accent-lt">
-                <!-- TODO: substituir este bloco por:
-                <img src="../images/equipamentos/mev-1.jpg" alt="MEV — foto 1" class="w-full h-full object-cover" />
-                -->
-                <span class="font-serif text-8xl font-bold text-accent select-none" aria-hidden="true">MEV</span>
-              </div>
-
-              <!-- TODO: adicionar mais slides aqui (uma por foto):
               <div class="carousel-slide min-w-full h-full">
-                <img src="../images/equipamentos/mev-2.jpg" alt="MEV — foto 2" class="w-full h-full object-cover" />
+                <img src="MEV1.jpeg" alt="MEV — foto 1" class="w-full h-full object-cover" />
               </div>
-              -->
+              <div class="carousel-slide min-w-full h-full">
+                <img src="MEV2.jpeg" alt="MEV — foto 2" class="w-full h-full object-cover" />
+              </div>
+              <div class="carousel-slide min-w-full h-full">
+                <img src="MEV3.jpeg" alt="MEV — foto 3" class="w-full h-full object-cover" />
+              </div>
 
             </div>
 
@@ -100,7 +96,6 @@
 
             <div class="carousel-dots absolute bottom-3 left-0 right-0 flex justify-center gap-2"></div>
           </div>
-          <p class="text-xs text-muted/60 mt-2 text-center italic">Fotos do equipamento serão adicionadas em breve.</p>
         </div>
 
         <!-- Informações técnicas -->
@@ -112,30 +107,29 @@
           <p class="text-accent text-sm font-semibold mb-6">MEV</p>
 
           <p class="text-muted text-[15px] leading-relaxed mb-8">
-            <!-- TODO: inserir descrição técnica do equipamento -->
-            Descrição técnica será adicionada em breve.
+            MEV de bancada com detector de elétrons retrodifundidos (BSE) e sistema de EDS integrado para microanálise química elementar. Operação totalmente automatizada, com tempo de inserção de amostra inferior a 30 segundos e sem necessidade de revestimento condutor para amostras em modo de baixo vácuo. Indicado para caracterização morfológica e composicional de cerâmicas, metais e compósitos.
           </p>
 
           <dl class="mb-8 text-sm">
             <div class="flex justify-between gap-4 py-3 border-b border-border">
               <dt class="text-muted">Ampliação máxima</dt>
-              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+              <dd class="text-ink font-medium text-right">100.000×</dd>
             </div>
             <div class="flex justify-between gap-4 py-3 border-b border-border">
               <dt class="text-muted">Tensão de aceleração</dt>
-              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+              <dd class="text-ink font-medium text-right">4,8 – 15 kV</dd>
             </div>
             <div class="flex justify-between gap-4 py-3 border-b border-border">
               <dt class="text-muted">Resolução</dt>
-              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+              <dd class="text-ink font-medium text-right">25 nm (BSE, alto vácuo)</dd>
             </div>
             <div class="flex justify-between gap-4 py-3 border-b border-border">
               <dt class="text-muted">Detectores</dt>
-              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+              <dd class="text-ink font-medium text-right">BSE · EDS (SDD integrado)</dd>
             </div>
             <div class="flex justify-between gap-4 py-3">
               <dt class="text-muted">Fabricante / Modelo</dt>
-              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+              <dd class="text-ink font-medium text-right">Thermo Fisher Scientific / Phenom ProX</dd>
             </div>
           </dl>
 

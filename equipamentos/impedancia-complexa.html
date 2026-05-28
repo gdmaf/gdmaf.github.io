@@ -41,7 +41,7 @@
     <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="../index.html" class="flex items-center gap-3 group" aria-label="GDMaF Home">
         <img src="../images/logo-gdmaf-nobg.png" alt="GDMaF" class="h-8 w-auto object-contain" />
-        <img src="../images/logo-unifei.png" alt="UNIFEI" class="h-7 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity hidden sm:block" />
+        <img src="../images/logo-unifei.png" alt="UNIFEI" class="h-8 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity hidden sm:block" />
       </a>
       <nav class="hidden md:flex items-center gap-7 text-[13px] font-medium text-muted">
         <a href="../index.html#missao"      class="nav-link">Missão</a>
@@ -73,11 +73,9 @@
         <div>
           <div class="carousel-wrapper relative overflow-hidden rounded-2xl border border-border aspect-[4/3]">
             <div class="carousel-track flex h-full transition-transform duration-300 ease-in-out">
-              <div class="carousel-slide min-w-full h-full flex items-center justify-center bg-accent-lt">
-                <!-- TODO: substituir por <img src="../images/equipamentos/impedancia-1.jpg" alt="Impedância — foto 1" class="w-full h-full object-cover" /> -->
-                <span class="font-serif text-8xl font-bold text-accent select-none" aria-hidden="true">EIS</span>
+              <div class="carousel-slide min-w-full h-full">
+                <img src="Impedancia1.jpeg" alt="Impedância Complexa — foto 1" class="w-full h-full object-cover" />
               </div>
-              <!-- TODO: adicionar mais slides aqui -->
             </div>
             <button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/40 text-white flex items-center justify-center hover:bg-black/60 transition-colors" aria-label="Imagem anterior">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/></svg>
@@ -87,7 +85,6 @@
             </button>
             <div class="carousel-dots absolute bottom-3 left-0 right-0 flex justify-center gap-2"></div>
           </div>
-          <p class="text-xs text-muted/60 mt-2 text-center italic">Fotos do equipamento serão adicionadas em breve.</p>
         </div>
 
         <div class="bg-surface rounded-2xl border border-border p-8 lg:p-10">
@@ -95,17 +92,16 @@
           <h1 class="font-serif text-4xl lg:text-5xl font-bold text-ink leading-tight mb-2">
             Espectroscopia de Impedância Complexa
           </h1>
-          <p class="text-accent text-sm font-semibold mb-6">EIS · 20 Hz – 30 MHz</p>
+          <p class="text-accent text-sm font-semibold mb-6">EIS · 20 Hz – 120 MHz</p>
 
           <p class="text-muted text-[15px] leading-relaxed mb-8">
-            <!-- TODO: inserir descrição técnica do equipamento -->
-            Descrição técnica será adicionada em breve.
+            Analisador de impedância de alta precisão para caracterização elétrica de materiais e componentes em função da frequência. Mede grandezas como impedância (|Z|, θ), capacitância, indutância, resistência, fator de dissipação (D) e fator de qualidade (Q). Aplicado na determinação de propriedades dielétricas e mecanismos de transporte de carga em cerâmicas e compósitos.
           </p>
 
           <dl class="mb-8 text-sm">
             <div class="flex justify-between gap-4 py-3 border-b border-border">
               <dt class="text-muted">Faixa de frequência</dt>
-              <dd class="text-ink font-medium text-right">20 Hz – 30 MHz</dd>
+              <dd class="text-ink font-medium text-right">20 Hz – 120 MHz</dd>
             </div>
             <div class="flex justify-between gap-4 py-3 border-b border-border">
               <dt class="text-muted">Temperatura de medição</dt>
@@ -113,15 +109,15 @@
             </div>
             <div class="flex justify-between gap-4 py-3 border-b border-border">
               <dt class="text-muted">Faixa de impedância</dt>
-              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+              <dd class="text-ink font-medium text-right">1 mΩ – 100 MΩ</dd>
             </div>
             <div class="flex justify-between gap-4 py-3 border-b border-border">
               <dt class="text-muted">Software</dt>
-              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+              <dd class="text-ink font-medium text-right">Keysight BenchVue</dd>
             </div>
             <div class="flex justify-between gap-4 py-3">
               <dt class="text-muted">Fabricante / Modelo</dt>
-              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+              <dd class="text-ink font-medium text-right">Keysight (Agilent) / E4990A</dd>
             </div>
           </dl>
 
