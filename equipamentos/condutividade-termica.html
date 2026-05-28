@@ -41,7 +41,7 @@
     <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="../index.html" class="flex items-center gap-3 group" aria-label="GDMaF Home">
         <img src="../images/logo-gdmaf-nobg.png" alt="GDMaF" class="h-8 w-auto object-contain" />
-        <img src="../images/logo-unifei.png" alt="UNIFEI" class="h-7 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity hidden sm:block" />
+        <img src="../images/logo-unifei.png" alt="UNIFEI" class="h-8 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity hidden sm:block" />
       </a>
       <nav class="hidden md:flex items-center gap-7 text-[13px] font-medium text-muted">
         <a href="../index.html#missao"      class="nav-link">Missão</a>
@@ -73,11 +73,9 @@
         <div>
           <div class="carousel-wrapper relative overflow-hidden rounded-2xl border border-border aspect-[4/3]">
             <div class="carousel-track flex h-full transition-transform duration-300 ease-in-out">
-              <div class="carousel-slide min-w-full h-full flex items-center justify-center bg-accent-lt">
-                <!-- TODO: substituir por <img src="../images/equipamentos/cond-termica-1.jpg" alt="Condutividade Térmica — foto 1" class="w-full h-full object-cover" /> -->
-                <span class="font-serif text-7xl font-bold text-accent select-none" aria-hidden="true">LFA</span>
+              <div class="carousel-slide min-w-full h-full">
+                <img src="LFA1.jpeg" alt="LFA — foto 1" class="w-full h-full object-cover" />
               </div>
-              <!-- TODO: adicionar mais slides aqui -->
             </div>
             <button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/40 text-white flex items-center justify-center hover:bg-black/60 transition-colors" aria-label="Imagem anterior">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/></svg>
@@ -87,7 +85,6 @@
             </button>
             <div class="carousel-dots absolute bottom-3 left-0 right-0 flex justify-center gap-2"></div>
           </div>
-          <p class="text-xs text-muted/60 mt-2 text-center italic">Fotos do equipamento serão adicionadas em breve.</p>
         </div>
 
         <div class="bg-surface rounded-2xl border border-border p-8 lg:p-10">
@@ -98,30 +95,29 @@
           <p class="text-accent text-sm font-semibold mb-6">LFA · Laser Flash Analysis</p>
 
           <p class="text-muted text-[15px] leading-relaxed mb-8">
-            <!-- TODO: inserir descrição técnica do equipamento -->
-            Descrição técnica será adicionada em breve.
+            Equipamento baseado no método flash de laser pulsado (norma ASTM E1461) para determinação da difusividade térmica (α) e condutividade térmica (λ) de sólidos. Permite medição simultânea de até três amostras, com tempo de análise por ponto inferior a 1 segundo. A condutividade térmica é calculada a partir da difusividade, da densidade e do calor específico da amostra.
           </p>
 
           <dl class="mb-8 text-sm">
             <div class="flex justify-between gap-4 py-3 border-b border-border">
               <dt class="text-muted">Faixa de temperatura</dt>
-              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+              <dd class="text-ink font-medium text-right">25 a 600°C</dd>
             </div>
             <div class="flex justify-between gap-4 py-3 border-b border-border">
               <dt class="text-muted">Faixa de medição</dt>
-              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+              <dd class="text-ink font-medium text-right">0,01 – 1000 mm²/s (difusividade)</dd>
             </div>
             <div class="flex justify-between gap-4 py-3 border-b border-border">
               <dt class="text-muted">Tamanho da amostra</dt>
-              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+              <dd class="text-ink font-medium text-right">⌀ 12,7 ou 25,4 mm · esp. 1 – 6 mm</dd>
             </div>
             <div class="flex justify-between gap-4 py-3 border-b border-border">
               <dt class="text-muted">Atmosfera</dt>
-              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+              <dd class="text-ink font-medium text-right">inerte · oxidante · vácuo</dd>
             </div>
             <div class="flex justify-between gap-4 py-3">
               <dt class="text-muted">Fabricante / Modelo</dt>
-              <dd class="text-ink font-medium text-right"><!-- TODO -->—</dd>
+              <dd class="text-ink font-medium text-right">NETZSCH / LFA 457 MicroFlash</dd>
             </div>
           </dl>
 
