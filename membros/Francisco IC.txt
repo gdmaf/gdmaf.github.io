@@ -1,0 +1,4 @@
+Nome: Francisco Rafael Rech de Carvalho
+
+Resumo do currículo: 
+Graduando em Engenharia de Materiais pela Universidade Federal de Itajubá (UNIFEI) e aluno de Iniciação Científica no Grupo de Desenvolvimento de Materiais Funcionais (GDMaF). Atua em pesquisa relacionada a materiais cerâmicos termoelétricos, com interesse no estudo de cobaltitas de cálcio. Atualmente, desenvolve conhecimentos em cálculos computacionais de estrutura eletrônica utilizando a Teoria do Funcional da Densidade (DFT), por meio do software Quantum ESPRESSO. Possui interesse em ciência dos materiais, materiais funcionais, cerâmicas e métodos computacionais aplicados ao estudo de materiais.
