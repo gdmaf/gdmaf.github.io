@@ -1,0 +1,10 @@
+Mariana Dias Ferreira
+Estudante · IC · GDMaF · UNIFEI
+
+https://www.linkedin.com/in/mariana-dias-ferreira-717372224/?isSelfProfile=true
+
+Graduanda em Engenharia Elétrica pela Universidade Federal de Itajubá (UNIFEI) e integrante do Grupo de Desenvolvimento de Materiais Funcionais (GDMaF), onde desenvolve iniciação científica na área de cerâmicas termoelétricas, com foco em simulação computacional. O projeto investiga geradores termoelétricos (TEGs) por meio de cálculos de primeiros princípios baseados na Teoria do Funcional da Densidade (DFT), utilizando o Quantum ESPRESSO para a análise de estrutura de bandas, densidade de estados (DOS e PDOS) e superfície de Fermi, com estudo da influência de vacâncias de oxigênio nas propriedades eletrônicas do CaMnO₃ e das características de transporte da Ca₃Co₄O₉.
+
+Realizou intercâmbio acadêmico na University of Stavanger (Noruega), com ênfase em recursos e tecnologias de energia, onde participou do projeto G-Nexus, voltado à modelagem do sistema energético da ilha de Utsira e à integração de geração eólica e solar com armazenamento.
+
+Possui experiência profissional em engenharia industrial e qualidade na GE Vernova e em análise de dados e performance na Liv Up, com domínio de Python, SQL, Excel e Power BI. Na UNIFEI, atuou como Diretora de Marketing do Centro Acadêmico de Engenharia Elétrica (CAAEL) e integra a comissão de formatura.
